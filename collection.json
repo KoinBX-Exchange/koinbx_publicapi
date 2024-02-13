@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "699ddafc-8919-4d27-b349-66532b8c4fff",
+		"name": "KoinBX Public API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30245170",
+		"_collection_link": "https://crimson-satellite-950895.postman.co/workspace/d131688b-917f-4442-866c-ff0c84e28c55/collection/30245170-699ddafc-8919-4d27-b349-66532b8c4fff?action=share&source=collection_link&creator=30245170"
+	},
+	"item": [
+		{
+			"name": "Markets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/markets",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"markets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Currencies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/asset",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"asset"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ticker",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/ticker",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"ticker"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order book",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/orderbook?market_pair=ETH_BTC",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"orderbook"
+					],
+					"query": [
+						{
+							"key": "market_pair",
+							"value": "ETH_BTC"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order book (Level)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/orderbook?market_pair=ETH_BTC&level=1",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"orderbook"
+					],
+					"query": [
+						{
+							"key": "market_pair",
+							"value": "ETH_BTC"
+						},
+						{
+							"key": "level",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Order book (Depth)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/orderbook?market_pair=ETH_BTC&depth=5",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"orderbook"
+					],
+					"query": [
+						{
+							"key": "market_pair",
+							"value": "ETH_BTC"
+						},
+						{
+							"key": "depth",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Trade History",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{api_url}}/trades?market_pair=ETH_BTC",
+					"host": [
+						"{{api_url}}"
+					],
+					"path": [
+						"trades"
+					],
+					"query": [
+						{
+							"key": "market_pair",
+							"value": "ETH_BTC"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

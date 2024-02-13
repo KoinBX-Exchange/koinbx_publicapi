@@ -1,0 +1,39 @@
+{
+	"id": "f80196d9-16f3-4636-b927-c15687ed3d99",
+	"name": "Koinbx Global",
+	"values": [
+		{
+			"key": "api_key",
+			"value": "xxx",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "api_secret",
+			"value": "xxx",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "api_url",
+			"value": "https://api.koinbx.com",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "timestamp",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "signature",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2024-01-08T05:38:43.542Z",
+	"_postman_exported_using": "Postman/10.21.11"
+}
